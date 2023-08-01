@@ -1,0 +1,19 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSH4R/Test-Task-for-JetRuby-Agency.git"
+  },
+  "author": "https://github.com/NSH4R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSH4R/Test-Task-for-JetRuby-Agency/issues"
+  },
+  "homepage": "https://github.com/NSH4R/Test-Task-for-JetRuby-Agency#readme"
+}
