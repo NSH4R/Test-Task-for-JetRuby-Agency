@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/NSH4R/Test-Task-for-JetRuby-Agency/issues"
   },
-  "homepage": "https://github.com/NSH4R/Test-Task-for-JetRuby-Agency#readme"
+  "homepage": "https://github.com/NSH4R/Test-Task-for-JetRuby-Agency#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "node-fetch": "^2.6.12"
+  }
 }
