@@ -1,4 +1,5 @@
 const db = require('../database')
+const parse = require('../app/parse')
 
 class RepController {
     async getName(req, res){
@@ -22,6 +23,13 @@ class RepController {
         const {id, name, url, stars} = req.body
         const newRep = await db.query(`INSERT INTO repositories (id, name, url, stars) values ($1, $2, $3, $4) RETURNING *;`, [id, name, url, stars])
         res.json(newRep.rows[0])
+    }
+    
+    async sync(req, res){
+        clearInterval(parseId)
+        // await parse()
+        // parseId = setInterval(parse, 60 * 1000)
+        res.json({massage: 'Data synchronized successfully'})
     }
 }
 

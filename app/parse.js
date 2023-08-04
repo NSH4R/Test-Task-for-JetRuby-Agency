@@ -12,7 +12,7 @@ async function parse() {
     const repositories = response.data['items'];
 
     for (const repository of repositories) {
-      console.log(`Got repository with id: ${repository.id}, name: ${repository.name}, url: ${repository.html_url}, stars: ${repository.stargazers_count}`);
+      // console.log(`Got repository with id: ${repository.id}, name: ${repository.name}, url: ${repository.html_url}, stars: ${repository.stargazers_count}`);
       
       const newRep = await pg.query(`
       INSERT INTO repositories (id, name, url, stars)
@@ -26,6 +26,4 @@ async function parse() {
     console.log('Error:', error.message);
   }
 }
-
-parse();
-setInterval(parse, 60 * 1000);
+module.exports = parse;
