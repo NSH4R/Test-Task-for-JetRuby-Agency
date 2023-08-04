@@ -1,7 +1,8 @@
+CREATE TABLE repositories (
+    id varchar(255) PRIMARY KEY,
+    name varchar(255),
+    url varchar(255),
+    stars integer,
 
-create TABLE repositories(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    url VARCHAR(255),
-    stars INTEGER
+    CONSTRAINT unique_id UNIQUE (id)
 );

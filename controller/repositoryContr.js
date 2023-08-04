@@ -23,12 +23,6 @@ class RepController {
         const newRep = await db.query(`INSERT INTO repositories (id, name, url, stars) values ($1, $2, $3, $4) RETURNING *;`, [id, name, url, stars])
         res.json(newRep.rows[0])
     }
-
-    async updateRep(req, res){
-        const {id, name, url, stars} = res.body
-        const repUpdate = await db.query('UPDATE repositories set name = $1, url = $2, stars = $3, RETURNING *;', [name, url, stars, id])
-        res.json(repUpdate.rows[0])
-    }
 }
 
 module.exports = new RepController()
