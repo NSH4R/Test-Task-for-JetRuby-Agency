@@ -55,3 +55,5 @@ In this case, the data will be updated and the parser timer will be reset.
 
 
 Thank you very much for your attention. This technical task gave a pleasant experience and impetus to development.
+
+P.S. A little time and I will correct the error... A week)
