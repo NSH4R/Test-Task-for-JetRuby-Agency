@@ -1,5 +1,5 @@
 const db = require('../database')
-const parse = require('../app/parse')
+// const parse = require('../app/parse')
 
 class RepController {
     async getName(req, res){
@@ -25,12 +25,12 @@ class RepController {
         res.json(newRep.rows[0])
     }
     
-    async sync(req, res){
-        clearInterval(parseId)
-        // await parse()
-        // parseId = setInterval(parse, 60 * 1000)
-        res.json({massage: 'Data synchronized successfully'})
-    }
+    // async sync(req, res){
+    //     clearInterval(parseId)
+    //     // await parse()
+    //     // parseId = setInterval(parse, 60 * 1000)
+    //     res.json({massage: 'Data synchronized successfully'})
+    // }
 }
 
 module.exports = new RepController()

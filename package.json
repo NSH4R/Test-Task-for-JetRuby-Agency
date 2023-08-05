@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-    
+    "start": "node index.js ../app/timer.js",
+    "dev": "nodemon index.js ../app/timer.js"
   },
   "repository": {
     "type": "git",

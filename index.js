@@ -9,9 +9,3 @@ app.use(express.json())
 app.use('/api', repositoryRouter)
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
-
-parse()
-let parseId = setInterval(parse, 30 * 1000)
-clearInterval(parseId);
-
-module.exports = parseId
